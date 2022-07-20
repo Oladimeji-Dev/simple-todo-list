@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: lightblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.container{
+    width: 36%;
+    left: 32%;
+    right: 32%;
+    top: 25vh;
+    position: absolute;
+    margin-bottom: 100px;
+    
+}
+header{
+    text-align: center;
+    color: white;
+}
+header h2{
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.default{
+    background-color: darkorchid;
+}
+.details{
+    background-color: whitesmoke;
+}
+.addTodo{
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.addTodo input{
+    padding: 10px 25px;
+    width: 70%;
+}
+input:focus{
+    border: solid darkorchid;
+}
+.addTodo .btn{
+    padding: 7px 25px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    border: solid darkorchid;
+    width: 28%;
+    font-size: 1.1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: darkorchid;
+    border-left: 1px solid back;
+}
+.details{
+    background-color: beige;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.details{
+    display: none;
+}
+
+.details h1{
+    text-align: center;
+}
+.details:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.card{
+    background-color:azure;
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transform: translateZ(0);
+    transition: transform .25s ease-out;
+   
+}
+.card:active{
+    transform: scale(.9);
+}
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card i {
+    margin-right: 20px;
+    display: block;
+    color: darkorchid;
+}
+li{
+    list-style-type: none;
+}
+
+.log{
+    position: sticky;
+    top: 0;
+}
+svg{
+    height: 25px;
+    width: 25px;
+    transform: translateZ(0);
+    transition: transform .25s ease-out;
+}
+svg:active{
+
+    transform: scale(.9);
+}
+svg:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.success{
+    width: 70%;
+    background-color: greenyellow;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px auto;
+    color: rgba(0, 0, 0, 0.742);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.error{
+    width: 70%;
+    background-color: rgba(255, 0, 0, 0.667);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.card{
+    margin-bottom: 10px;
+}
+.delete{
+    padding: 10px;
+}
+
+
+
+@media only screen and (max-width: 1186px) {
+    .container{
+        width: 60%;
+        left:20%;
+        right: 20%;
+        top: 25vh;
+        position: absolute;
+        margin-bottom: 100px;
+        
+    } 
+    
+} 
+
+
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 90%;
+        left: 5%;
+        right: 5%;
+        top: 25vh;
+        position: absolute;
+        margin-bottom: 100px;
+        
+    }
+}
+
